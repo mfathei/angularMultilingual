@@ -1,5 +1,5 @@
 {
-  "name": "angularML",
+  "name": "angularml",
   "authors": [
     "Mohammed Mahdy <mohamed.mahdy@sphinxinfotech.net>"
   ],
@@ -16,6 +16,8 @@
   ],
   "dependencies": {
     "angular": "^1.6.4",
-    "angular-translate": "^2.15.1"
+    "angular-translate": "^2.15.1",
+    "angular-sanitize": "^1.6.4",
+    "angular-translate-handler-log": "^2.15.1"
   }
 }
