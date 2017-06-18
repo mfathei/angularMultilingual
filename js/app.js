@@ -1,4 +1,4 @@
-var app = angular.module('Multilingual', ['pascalprecht.translate']);
+var app = angular.module('Multilingual', ['pascalprecht.translate', 'ngCookies']);
 
 app.config(['$translateProvider', function($translateProvider){
  /**
@@ -18,6 +18,7 @@ app.config(['$translateProvider', function($translateProvider){
     
     $translateProvider.useSanitizeValueStrategy('escape');
     $translateProvider.preferredLanguage('ar');
+    $translateProvider.useLocalStorage();
     $translateProvider.useMissingTranslationHandlerLog();
     
 }]);

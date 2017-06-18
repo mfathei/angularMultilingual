@@ -15,6 +15,9 @@ gulp.task('js', function(){
         './bower_components/angular-sanitize/angular-sanitize.js',
         './bower_components/angular-translate-handler-log/angular-translate-handler-log.js',
         './bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
+        './bower_components/angular-cookies/angular-cookies.js',
+        './bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js',
+        './bower_components/angular-translate-storage-local/angular-translate-storage-local.js',
         './js/app.js'
     ])
     .pipe(concat('app.min.js'))
