@@ -2,5 +2,6 @@
     "HELLO": "مرحبا",
     "BUTTON_LANG_AR": "العربية",
     "BUTTON_LANG_EN": "الانجليزية",
-    "WELCOME_MESSAGE": "مرحبا بك في AngularJS متعدد اللغات"
+    "WELCOME_MESSAGE": "مرحبا بك في AngularJS متعدد اللغات",
+    "USER_LOGGED_IN": "{{username}} قام بتسجيل الدخول"
 }

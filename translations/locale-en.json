@@ -2,5 +2,6 @@
     "HELLO": "Hello",
     "BUTTON_LANG_AR": "Arabic",
     "BUTTON_LANG_EN": "English",
-    "WELCOME_MESSAGE": "Welcome to the AngularJS multilingual site"
+    "WELCOME_MESSAGE": "Welcome to the AngularJS multilingual site",
+    "USER_LOGGED_IN": "{{username}} is logged in."
 }

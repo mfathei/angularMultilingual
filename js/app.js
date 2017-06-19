@@ -38,6 +38,10 @@ app.controller('LanguageSwitchController', ['$scope', '$rootScope', '$translate'
         $translate.use(langKey);
     };
     
+    $scope.translationData = {
+        username: 'Mahdy'
+    };
+    
     $rootScope.$on('$translateChangeSuccess', function(event, data){
         var language = data.language;
         
@@ -48,6 +52,13 @@ app.controller('LanguageSwitchController', ['$scope', '$rootScope', '$translate'
         
         $rootScope.default_float = language === 'ar'? 'right':'left';
         $rootScope.opposite_float = language === 'ar'? 'left':'right';
+        
+        // ---------------------------
+        if($rootScope.lang === 'ar'){
+            $scope.translationData.username = "مهدي";
+        }else{
+            $scope.translationData.username = "Mahdy";
+        }
     });
     
 }]);

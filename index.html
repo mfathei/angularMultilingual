@@ -8,9 +8,11 @@
     
 </head>
 <body>
-    <h2>{{'HELLO' | translate}}</h2>
-    <h2 translate="HELLO"></h2>
     <div ng-controller="LanguageSwitchController">
+        <h2>{{'HELLO' | translate}}</h2>
+        <h2 translate="HELLO"></h2>
+        <br/><h2 translate="USER_LOGGED_IN" translate-values="{{translationData}}"></h2>
+        
         <button ng-show="lang == 'en'" ng-click="changeLanguage('ar')" translate="BUTTON_LANG_AR"></button>
         <button ng-show="lang == 'ar'" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></button>
     </div>
