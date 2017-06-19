@@ -22,7 +22,16 @@ gulp.task('js', function(){
     ])
     .pipe(concat('app.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./js'));
+});
+
+gulp.task('sass', function(){
+    return gulp.src([
+        './sass/ltr-app.scss',
+        './sass/rtl-app.scss'
+    ])
+    .pipe(sass())
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('serve', function(){
@@ -35,7 +44,7 @@ gulp.task('serve', function(){
 });
 
 gulp.task('build', [], function(){
-    runSequence('js');
+    runSequence('js', 'sass');
 });
 
 gulp.task('default', ['build'], function(){});

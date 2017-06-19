@@ -1,0 +1,8 @@
+body {
+  direction: rtl; }
+
+.column {
+  float: right; }
+
+.media-image {
+  padding-left: 1rem; }

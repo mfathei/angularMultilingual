@@ -1,0 +1,5 @@
+body { direction: $default-direction; }
+
+.column { float: $default-float; }
+
+.media-image { padding-#{$opposite-float}: 1rem; }
